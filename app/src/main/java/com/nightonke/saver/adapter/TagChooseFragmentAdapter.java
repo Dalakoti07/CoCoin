@@ -4,6 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import androidx.fragment.app.FragmentManager;
+
 import com.nightonke.saver.fragment.TagChooseFragment;
 
 /**
