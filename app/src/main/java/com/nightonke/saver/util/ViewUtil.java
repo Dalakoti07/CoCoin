@@ -3,8 +3,9 @@ package com.nightonke.saver.util;
 /**
  * Created by 伟平 on 2015/11/13.
  */
-import android.support.v4.view.ViewCompat;
 import android.view.View;
+
+import androidx.core.view.ViewCompat;
 
 public class ViewUtil {
     public static boolean hitTest(View v, int x, int y) {

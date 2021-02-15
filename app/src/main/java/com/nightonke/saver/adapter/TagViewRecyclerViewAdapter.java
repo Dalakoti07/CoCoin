@@ -2,13 +2,15 @@ package com.nightonke.saver.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.v4.app.FragmentActivity;
-import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.nightonke.saver.R;
 import com.nightonke.saver.fragment.RecordCheckDialogFragment;
@@ -34,8 +36,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import butterknife.BindView;
+import butterknife.BindViews;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 import butterknife.Optional;
 import lecho.lib.hellocharts.listener.ColumnChartOnValueSelectListener;
 import lecho.lib.hellocharts.listener.PieChartOnValueSelectListener;
@@ -643,37 +646,37 @@ public class TagViewRecyclerViewAdapter
     }
 
     public static class viewHolder extends RecyclerView.ViewHolder {
-        @Optional
-        @InjectView(R.id.from)
+        @Nullable
+        @BindView(R.id.from)
         TextView from;
-        @Optional
-        @InjectView(R.id.sum)
+        @Nullable
+        @BindView(R.id.sum)
         TextView sum;
-        @Optional
-        @InjectView(R.id.to)
+        @Nullable
+        @BindView(R.id.to)
         TextView to;
-        @Optional
-        @InjectView(R.id.chart_pie)
+        @Nullable
+        @BindView(R.id.chart_pie)
         PieChartView pie;
-        @Optional
-        @InjectView(R.id.chart)
+        @Nullable
+        @BindView(R.id.chart)
         ColumnChartView chart;
-        @Optional
-        @InjectView(R.id.date)
+        @Nullable
+        @BindView(R.id.date)
         TextView date;
-        @Optional
-        @InjectView(R.id.expanse)
+        @Nullable
+        @BindView(R.id.expanse)
         TextView expanse;
-        @Optional
-        @InjectView(R.id.icon_left)
+        @Nullable
+        @BindView(R.id.icon_left)
         MaterialIconView iconLeft;
-        @Optional
-        @InjectView(R.id.icon_right)
+        @Nullable
+        @BindView(R.id.icon_right)
         MaterialIconView iconRight;
 
         viewHolder(View view) {
             super(view);
-            ButterKnife.inject(this, view);
+            ButterKnife.bind(this, view);
         }
     }
 

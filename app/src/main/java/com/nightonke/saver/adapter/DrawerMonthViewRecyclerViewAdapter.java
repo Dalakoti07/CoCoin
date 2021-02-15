@@ -1,11 +1,13 @@
 package com.nightonke.saver.adapter;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.nightonke.saver.R;
 import com.nightonke.saver.activity.CoCoinApplication;
@@ -15,8 +17,8 @@ import com.nightonke.saver.util.CoCoinUtil;
 import java.util.ArrayList;
 import java.util.Calendar;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 import butterknife.Optional;
 
 /**
@@ -116,22 +118,22 @@ public class DrawerMonthViewRecyclerViewAdapter
 
     public class viewHolder extends RecyclerView.ViewHolder
         implements View.OnClickListener {
-        @Optional
-        @InjectView(R.id.month)
+        @Nullable
+        @BindView(R.id.month)
         TextView month;
-        @Optional
-        @InjectView(R.id.year)
+        @Nullable
+        @BindView(R.id.year)
         TextView year;
-        @Optional
-        @InjectView(R.id.money)
+        @Nullable
+        @BindView(R.id.money)
         TextView money;
-        @Optional
-        @InjectView(R.id.sum)
+        @Nullable
+        @BindView(R.id.sum)
         TextView sum;
 
         viewHolder(View view) {
             super(view);
-            ButterKnife.inject(this, view);
+            ButterKnife.bind(this, view);
             view.setOnClickListener(this);
         }
 

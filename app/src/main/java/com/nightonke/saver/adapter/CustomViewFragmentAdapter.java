@@ -1,7 +1,9 @@
 package com.nightonke.saver.adapter;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentStatePagerAdapter;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.nightonke.saver.fragment.CustomViewFragment;
 
@@ -13,7 +15,7 @@ import com.nightonke.saver.fragment.CustomViewFragment;
 
 public class CustomViewFragmentAdapter extends FragmentStatePagerAdapter {
 
-    public CustomViewFragmentAdapter(android.support.v4.app.FragmentManager fm) {
+    public CustomViewFragmentAdapter(FragmentManager fm) {
         super(fm);
     }
 

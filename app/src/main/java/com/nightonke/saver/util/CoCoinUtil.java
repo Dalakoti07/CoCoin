@@ -9,7 +9,6 @@ import android.graphics.Color;
 import android.graphics.Point;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
-import android.support.v4.content.ContextCompat;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.RelativeSizeSpan;
 import android.util.DisplayMetrics;
@@ -18,6 +17,8 @@ import android.view.Display;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+
+import androidx.core.content.ContextCompat;
 
 import com.daimajia.androidanimations.library.BaseViewAnimator;
 import com.github.johnpersano.supertoasts.SuperToast;

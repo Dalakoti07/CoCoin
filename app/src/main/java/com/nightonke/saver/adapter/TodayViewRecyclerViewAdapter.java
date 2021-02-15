@@ -2,13 +2,15 @@ package com.nightonke.saver.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.v4.app.FragmentActivity;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.balysv.materialripple.MaterialRippleLayout;
@@ -32,8 +34,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 import butterknife.Optional;
 import lecho.lib.hellocharts.listener.ColumnChartOnValueSelectListener;
 import lecho.lib.hellocharts.listener.PieChartOnValueSelectListener;
@@ -644,64 +646,64 @@ public class TodayViewRecyclerViewAdapter
 
 // view holder class////////////////////////////////////////////////////////////////////////////////
     public static class viewHolder extends RecyclerView.ViewHolder {
-        @Optional
-        @InjectView(R.id.date)
+        @Nullable
+        @BindView(R.id.date)
         TextView date;
-        @Optional
-        @InjectView(R.id.date_bottom)
+        @Nullable
+        @BindView(R.id.date_bottom)
         TextView dateBottom;
-        @Optional
-        @InjectView(R.id.expanse)
+        @Nullable
+        @BindView(R.id.expanse)
         TextView expanseSum;
-        @Optional
-        @InjectView(R.id.empty_tip)
+        @Nullable
+        @BindView(R.id.empty_tip)
         TextView emptyTip;
-        @Optional
-        @InjectView(R.id.chart_pie)
+        @Nullable
+        @BindView(R.id.chart_pie)
         PieChartView pie;
-        @Optional
-        @InjectView(R.id.histogram)
+        @Nullable
+        @BindView(R.id.histogram)
         ColumnChartView histogram;
-        @Optional
-        @InjectView(R.id.icon_left)
+        @Nullable
+        @BindView(R.id.icon_left)
         MaterialIconView iconLeft;
-        @Optional
-        @InjectView(R.id.icon_right)
+        @Nullable
+        @BindView(R.id.icon_right)
         MaterialIconView iconRight;
-        @Optional
-        @InjectView(R.id.histogram_icon_left)
+        @Nullable
+        @BindView(R.id.histogram_icon_left)
         MaterialIconView histogram_icon_left;
-        @Optional
-        @InjectView(R.id.histogram_icon_right)
+        @Nullable
+        @BindView(R.id.histogram_icon_right)
         MaterialIconView histogram_icon_right;
-        @Optional
-        @InjectView(R.id.icon_reset)
+        @Nullable
+        @BindView(R.id.icon_reset)
         MaterialIconView reset;
-        @Optional
-        @InjectView(R.id.all)
+        @Nullable
+        @BindView(R.id.all)
         MaterialIconView all;
-        @Optional
-        @InjectView(R.id.tag_image)
+        @Nullable
+        @BindView(R.id.tag_image)
         ImageView tagImage;
-        @Optional
-        @InjectView(R.id.money)
+        @Nullable
+        @BindView(R.id.money)
         TextView money;
-        @Optional
-        @InjectView(R.id.cell_date)
+        @Nullable
+        @BindView(R.id.cell_date)
         TextView cell_date;
-        @Optional
-        @InjectView(R.id.remark)
+        @Nullable
+        @BindView(R.id.remark)
         TextView remark;
-        @Optional
-        @InjectView(R.id.index)
+        @Nullable
+        @BindView(R.id.index)
         TextView index;
-        @Optional
-        @InjectView(R.id.material_ripple_layout)
+        @Nullable
+        @BindView(R.id.material_ripple_layout)
         MaterialRippleLayout layout;
 
         viewHolder(View view) {
             super(view);
-            ButterKnife.inject(this, view);
+            ButterKnife.bind(this, view);
         }
     }
 

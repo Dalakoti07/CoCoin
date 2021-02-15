@@ -1,9 +1,7 @@
 package com.nightonke.saver.adapter;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.fragment.app.FragmentManager;
 
 import com.nightonke.saver.fragment.TagChooseFragment;
@@ -25,6 +23,7 @@ public class TagChooseFragmentAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         return TagChooseFragment.newInstance(position);
     }
+
 
     @Override
     public int getCount() {
